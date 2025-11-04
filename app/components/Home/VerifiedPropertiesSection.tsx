@@ -52,7 +52,7 @@ export default function VerifiedPropertiesSection() {
     fetchProperties();
   }, []);
 
-  // Custom arrow components
+  // Custom arrows
   const NextArrow = ({ onClick }: { onClick?: () => void }) => (
     <button
       onClick={onClick}
@@ -79,6 +79,7 @@ export default function VerifiedPropertiesSection() {
     autoplay: true,
     autoplaySpeed: 3500,
     speed: 600,
+    // rows: 2,
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
@@ -92,7 +93,7 @@ export default function VerifiedPropertiesSection() {
 
   return (
     <section className="w-full py-20 px-8 bg-background text-foreground">
-      {/* Header Row */}
+      {/* Header */}
       <div className="flex items-center justify-between mb-12 max-w-7xl mx-auto">
         <div>
           <h2 className="text-3xl font-bold tracking-tight">
@@ -106,7 +107,14 @@ export default function VerifiedPropertiesSection() {
       </div>
 
       {/* Carousel */}
-      <div className="relative max-w-7xl mx-auto px-6 overflow-visible">
+      <div
+        className="
+          relative max-w-7xl mx-auto px-6 pb-10 
+          overflow-visible 
+          [&_.slick-list]:overflow-visible 
+          [&_.slick-slider]:overflow-visible
+        "
+      >
         {loading ? (
           <p className="text-center text-muted-foreground py-10 text-lg">
             Loading properties...
@@ -115,7 +123,16 @@ export default function VerifiedPropertiesSection() {
           <Slider {...settings}>
             {properties.map((p, i) => (
               <div key={i} className="px-6 py-4">
-                <div className="group rounded-2xl bg-card shadow-md hover:shadow-2xl transition-all duration-300 border border-border/40 hover:-translate-y-2 hover:scale-[1.02] overflow-visible">
+                <div
+                  className="
+                    group rounded-2xl bg-card 
+                    shadow-md hover:shadow-s 
+                    transition-all duration-300 
+                    border border-border/40 
+                    hover:-translate-y-2 hover:scale-[1.02] 
+                    overflow-visible
+                  "
+                >
                   <div className="relative h-60 w-full rounded-t-2xl overflow-hidden">
                     <Image
                       src={
