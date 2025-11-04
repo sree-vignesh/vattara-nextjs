@@ -6,7 +6,7 @@ import SearchBox from "./SearchBox";
 
 export default function Hero() {
   return (
-    <section className="relative h-[95vh] flex flex-col justify-center items-center text-center overflow-hidden">
+    <section className="relative h-[90vh] flex flex-col justify-center items-center text-center overflow-hidden">
       {/* Background image placeholder */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -48,6 +48,7 @@ export default function Hero() {
         <SearchBox />
       </div>
       {/* </motion.div> */}
+      <hr />
     </section>
   );
 }
