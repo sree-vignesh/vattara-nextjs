@@ -49,8 +49,8 @@ export default function SearchBox() {
             }}
             className={`px-5 py-2 rounded-md font-medium border-2 transition ${
               selectedMode === "residential"
-                ? "bg-blue-600 text-white border-blue-600"
-                : "bg-white text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white"
+                ? "bg-primary text-white border-primary"
+                : "bg-white text-primary border-primary hover:bg-primary hover:text-white"
             }`}
           >
             Residential
@@ -63,8 +63,8 @@ export default function SearchBox() {
             }}
             className={`px-5 py-2 rounded-md font-medium border-2 transition ${
               selectedMode === "commercial"
-                ? "bg-blue-600 text-white border-blue-600"
-                : "bg-white text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white"
+                ? "bg-primary text-white border-primary"
+                : "bg-white text-primary border-primary hover:bg-primary hover:text-white"
             }`}
           >
             Commercial
@@ -108,7 +108,7 @@ export default function SearchBox() {
 
         <button
           onClick={handleSearch}
-          className="bg-blue-600 text-white rounded-md px-5 py-2 font-medium hover:bg-blue-700 transition"
+          className="bg-primary text-white rounded-md px-5 py-2 font-medium hover:bg-accent transition"
         >
           Go
         </button>

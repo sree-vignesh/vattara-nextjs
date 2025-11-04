@@ -34,11 +34,11 @@ export default function Hero() {
 
       {/* Buttons */}
       <div className="flex justify-center gap-4 mb-12">
-        <button className="bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-blue-600 hover:text-white transition">
+        <button className="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-primary hover:text-white transition">
           {" "}
           Post Your Property
         </button>
-        <button className="bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-blue-600 hover:text-white transition">
+        <button className="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-primary hover:text-white transition">
           {" "}
           List Your Service
         </button>
