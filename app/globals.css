@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 :root {
   /* Light mode defaults */
@@ -7,7 +9,7 @@
 
   --primary: #2563eb;   /* blue-600 */
   --secondary: #9333ea; /* purple-600 */
-  --accent: #f59e0b;    /* amber-500 */
+  --accent: #2563eb;    /* amber-500 */
   --muted: #f3f4f6;     /* gray-100 */
   --border: #e5e7eb;    /* gray-200 */
 }
@@ -36,7 +38,7 @@
 
     /* --primary: #3b82f6; */
     --secondary: #a855f7;
-    --accent: #fbbf24;
+    /* --accent: #fbbf24; */
     --muted: #1f2937;
     --border: #374151;
   }
