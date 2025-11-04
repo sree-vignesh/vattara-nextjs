@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white text-black p-4 flex justify-around items-center">
+    <nav className="bg-gray-200 text-black p-4 flex justify-around items-center">
       <h1 className="text-xl font-bold text-blue-600">Vattara</h1>
 
       <div className="flex space-x-6">
